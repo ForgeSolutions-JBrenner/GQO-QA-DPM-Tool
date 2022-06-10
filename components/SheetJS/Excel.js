@@ -50,7 +50,7 @@ export default function Excel(props) {
     const temprows = utils.sheet_to_json(wsSheets[wb.SheetNames[0]], {
       header: 1,
     });
-    
+
     const { rows, columns } = getRowsCols(wsName);
 
     //Set rows and columns to be displayed in the data grid
@@ -187,7 +187,7 @@ export default function Excel(props) {
                   ></path>
                 </svg>
                 <p className="mb-2 text-sm text-gray-500 dark:text-gray-400">
-                  <span class="font-semibold">Click to upload</span> or drag and
+                  <span className="font-semibold">Click to upload</span> or drag and
                   drop
                 </p>
                 <p className="text-xs text-gray-500 dark:text-gray-400">
