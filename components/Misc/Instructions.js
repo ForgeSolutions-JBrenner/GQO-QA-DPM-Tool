@@ -16,6 +16,9 @@ export default function Instructions() {
           </a>{" "}
         </li>
         <li>
+        Select your Site, Month and Year of Upload from the dropdown menus
+        </li>
+        <li>
         Enter your months data extracted from your ERP System
         </li>
       </ol>
