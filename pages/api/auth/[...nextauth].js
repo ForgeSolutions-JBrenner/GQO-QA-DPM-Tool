@@ -8,6 +8,7 @@ providers: [
     clientSecret: process.env.AZURE_AD_CLIENT_SECRET,
     tenantId: process.env.AZURE_AD_TENANT_ID,
   }),
-]
+], 
+secret: process.env.NEXT_PUBLIC_SECRET
 })
 
