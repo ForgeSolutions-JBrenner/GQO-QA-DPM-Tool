@@ -1,0 +1,340 @@
+{
+  "query": [
+    {
+      "Supplier DPM Sites": "Cestas",
+      "Franchise": "Spine",
+      "Site": "Select Site For Upload",
+      "Item Type": "Item",
+      "Path": "sites/GQOAnalytics333/Lists/SGS Supplier DPM Sites"
+    },
+    {
+      "Supplier DPM Sites": "Cestas",
+      "Franchise": "Spine",
+      "Site": "Cestas",
+      "Item Type": "Item",
+      "Path": "sites/GQOAnalytics333/Lists/SGS Supplier DPM Sites"
+    },
+    {
+      "Supplier DPM Sites": "Kiel",
+      "Franchise": "T&E",
+      "Site": "Kiel",
+      "Item Type": "Item",
+      "Path": "sites/GQOAnalytics333/Lists/SGS Supplier DPM Sites"
+    },
+    {
+      "Supplier DPM Sites": "LCDF",
+      "Franchise": "Spine",
+      "Site": "LCDF",
+      "Item Type": "Item",
+      "Path": "sites/GQOAnalytics333/Lists/SGS Supplier DPM Sites"
+    },
+    {
+      "Supplier DPM Sites": "Malvern",
+      "Franchise": "Joint Replacement",
+      "Site": "Malvern",
+      "Item Type": "Item",
+      "Path": "sites/GQOAnalytics333/Lists/SGS Supplier DPM Sites"
+    },
+    {
+      "Supplier DPM Sites": "Suzhou",
+      "Franchise": "Suzhou",
+      "Site": "Suzhou",
+      "Item Type": "Item",
+      "Path": "sites/GQOAnalytics333/Lists/SGS Supplier DPM Sites"
+    },
+    {
+      "Supplier DPM Sites": "Arroyo - Endoscopy",
+      "Franchise": "Endoscopy",
+      "Site": "Arroyo",
+      "Item Type": "Item",
+      "Path": "sites/GQOAnalytics333/Lists/SGS Supplier DPM Sites"
+    },
+    {
+      "Supplier DPM Sites": "Flower Mound",
+      "Franchise": "Endoscopy",
+      "Site": "Flower Mound",
+      "Item Type": "Item",
+      "Path": "sites/GQOAnalytics333/Lists/SGS Supplier DPM Sites"
+    },
+    {
+      "Supplier DPM Sites": "RHQ",
+      "Franchise": "GQO",
+      "Site": "European Buying Center",
+      "Item Type": "Item",
+      "Path": "sites/GQOAnalytics333/Lists/SGS Supplier DPM Sites"
+    },
+    {
+      "Supplier DPM Sites": "San Jose",
+      "Franchise": "Endoscopy",
+      "Site": "San Jose",
+      "Item Type": "Item",
+      "Path": "sites/GQOAnalytics333/Lists/SGS Supplier DPM Sites"
+    },
+    {
+      "Supplier DPM Sites": "Tuttlingen",
+      "Franchise": "Endoscopy",
+      "Site": "Tuttlingen",
+      "Item Type": "Item",
+      "Path": "sites/GQOAnalytics333/Lists/SGS Supplier DPM Sites"
+    },
+    {
+      "Supplier DPM Sites": "CM OEM KZO- Instruments",
+      "Franchise": "Instruments",
+      "Site": "Kalamazoo - OEM/CM",
+      "Item Type": "Item",
+      "Path": "sites/GQOAnalytics333/Lists/SGS Supplier DPM Sites"
+    },
+    {
+      "Supplier DPM Sites": "Springhill",
+      "Franchise": "Instruments",
+      "Site": "Springhill",
+      "Item Type": "Item",
+      "Path": "sites/GQOAnalytics333/Lists/SGS Supplier DPM Sites"
+    },
+    {
+      "Supplier DPM Sites": "Inagi",
+      "Franchise": "Instruments",
+      "Site": "Inagi",
+      "Item Type": "Item",
+      "Path": "sites/GQOAnalytics333/Lists/SGS Supplier DPM Sites"
+    },
+    {
+      "Supplier DPM Sites": "Tullagreen",
+      "Franchise": "Joint Replacement",
+      "Site": "Tullagreen",
+      "Item Type": "Item",
+      "Path": "sites/GQOAnalytics333/Lists/SGS Supplier DPM Sites"
+    },
+    {
+      "Supplier DPM Sites": "Fort Lauderdale",
+      "Franchise": "Joint Replacement",
+      "Site": "Fort Lauderdale",
+      "Item Type": "Item",
+      "Path": "sites/GQOAnalytics333/Lists/SGS Supplier DPM Sites"
+    },
+    {
+      "Supplier DPM Sites": "Selzach",
+      "Franchise": "T&E",
+      "Site": "Selzach",
+      "Item Type": "Item",
+      "Path": "sites/GQOAnalytics333/Lists/SGS Supplier DPM Sites"
+    },
+    {
+      "Supplier DPM Sites": "Arroyo - Instruments",
+      "Franchise": "Instruments",
+      "Site": "Arroyo",
+      "Item Type": "Item",
+      "Path": "sites/GQOAnalytics333/Lists/SGS Supplier DPM Sites"
+    },
+    {
+      "Supplier DPM Sites": "Anngrove",
+      "Franchise": "Joint Replacement",
+      "Site": "Anngrove",
+      "Item Type": "Item",
+      "Path": "sites/GQOAnalytics333/Lists/SGS Supplier DPM Sites"
+    },
+    {
+      "Supplier DPM Sites": "Plymouth",
+      "Franchise": "Instruments",
+      "Site": "Plymouth",
+      "Item Type": "Item",
+      "Path": "sites/GQOAnalytics333/Lists/SGS Supplier DPM Sites"
+    },
+    {
+      "Supplier DPM Sites": "Durham",
+      "Franchise": "CMF",
+      "Site": "Durham",
+      "Item Type": "Item",
+      "Path": "sites/GQOAnalytics333/Lists/SGS Supplier DPM Sites"
+    },
+    {
+      "Supplier DPM Sites": "Leesburg",
+      "Franchise": "Spine",
+      "Site": "Leesburg",
+      "Item Type": "Item",
+      "Path": "sites/GQOAnalytics333/Lists/SGS Supplier DPM Sites"
+    },
+    {
+      "Supplier DPM Sites": "Caesarea",
+      "Franchise": "Endoscopy",
+      "Site": "Caesarea",
+      "Item Type": "Item",
+      "Path": "sites/GQOAnalytics333/Lists/SGS Supplier DPM Sites"
+    },
+    {
+      "Supplier DPM Sites": "Shirley",
+      "Franchise": "Spine",
+      "Site": "Shirley",
+      "Item Type": "Item",
+      "Path": "sites/GQOAnalytics333/Lists/SGS Supplier DPM Sites"
+    },
+    {
+      "Supplier DPM Sites": "Tijuana INS",
+      "Franchise": "Instruments",
+      "Site": "Tijuana",
+      "Item Type": "Item",
+      "Path": "sites/GQOAnalytics333/Lists/SGS Supplier DPM Sites"
+    },
+    {
+      "Supplier DPM Sites": "Tijuana SSS",
+      "Franchise": "SSS",
+      "Site": "Tijuana",
+      "Item Type": "Item",
+      "Path": "sites/GQOAnalytics333/Lists/SGS Supplier DPM Sites"
+    },
+    {
+      "Supplier DPM Sites": "NoABC",
+      "Franchise": "GQO",
+      "Site": "North American Buying Center",
+      "Item Type": "Item",
+      "Path": "sites/GQOAnalytics333/Lists/SGS Supplier DPM Sites"
+    },
+    {
+      "Supplier DPM Sites": "Burnaby",
+      "Franchise": "Endoscopy",
+      "Site": "Burnaby",
+      "Item Type": "Item",
+      "Path": "sites/GQOAnalytics333/Lists/SGS Supplier DPM Sites"
+    },
+    {
+      "Supplier DPM Sites": "Cary",
+      "Franchise": "Medical",
+      "Site": "Cary",
+      "Item Type": "Item",
+      "Path": "sites/GQOAnalytics333/Lists/SGS Supplier DPM Sites"
+    },
+    {
+      "Supplier DPM Sites": "Elstree",
+      "Franchise": "Joint Replacement",
+      "Site": "Elstree",
+      "Item Type": "Item",
+      "Path": "sites/GQOAnalytics333/Lists/SGS Supplier DPM Sites"
+    },
+    {
+      "Supplier DPM Sites": "Freiburg and Stetten",
+      "Franchise": "CMF",
+      "Site": "Freiburg and Stetten",
+      "Item Type": "Item",
+      "Path": "sites/GQOAnalytics333/Lists/SGS Supplier DPM Sites"
+    },
+    {
+      "Supplier DPM Sites": "Kalamazoo - Instruments",
+      "Franchise": "Instruments",
+      "Site": "Kalamazoo",
+      "Item Type": "Item",
+      "Path": "sites/GQOAnalytics333/Lists/SGS Supplier DPM Sites"
+    },
+    {
+      "Supplier DPM Sites": "Kayseri",
+      "Franchise": "Medical",
+      "Site": "Kayseri",
+      "Item Type": "Item",
+      "Path": "sites/GQOAnalytics333/Lists/SGS Supplier DPM Sites"
+    },
+    {
+      "Supplier DPM Sites": "Lakeland",
+      "Franchise": "SSS",
+      "Site": "Lakeland",
+      "Item Type": "Item",
+      "Path": "sites/GQOAnalytics333/Lists/SGS Supplier DPM Sites"
+    },
+    {
+      "Supplier DPM Sites": "Limerick",
+      "Franchise": "Joint Replacement",
+      "Site": "Limerick",
+      "Item Type": "Item",
+      "Path": "sites/GQOAnalytics333/Lists/SGS Supplier DPM Sites"
+    },
+    {
+      "Supplier DPM Sites": "London",
+      "Franchise": "Medical",
+      "Site": "London",
+      "Item Type": "Item",
+      "Path": "sites/GQOAnalytics333/Lists/SGS Supplier DPM Sites"
+    },
+    {
+      "Supplier DPM Sites": "Mahwah",
+      "Franchise": "Joint Replacement",
+      "Site": "Mahwah",
+      "Item Type": "Item",
+      "Path": "sites/GQOAnalytics333/Lists/SGS Supplier DPM Sites"
+    },
+    {
+      "Supplier DPM Sites": "Model Farm Road",
+      "Franchise": "NV",
+      "Site": "Model Farm Road",
+      "Item Type": "Item",
+      "Path": "sites/GQOAnalytics333/Lists/SGS Supplier DPM Sites"
+    },
+    {
+      "Supplier DPM Sites": "Phoenix",
+      "Franchise": "SSS",
+      "Site": "Phoenix",
+      "Item Type": "Item",
+      "Path": "sites/GQOAnalytics333/Lists/SGS Supplier DPM Sites"
+    },
+    {
+      "Supplier DPM Sites": "Portage Medical",
+      "Franchise": "Medical",
+      "Site": "Portage",
+      "Item Type": "Item",
+      "Path": "sites/GQOAnalytics333/Lists/SGS Supplier DPM Sites"
+    },
+    {
+      "Supplier DPM Sites": "Redmond",
+      "Franchise": "Medical",
+      "Site": "Redmond",
+      "Item Type": "Item",
+      "Path": "sites/GQOAnalytics333/Lists/SGS Supplier DPM Sites"
+    },
+    {
+      "Supplier DPM Sites": "Salt Lake City",
+      "Franchise": "NV",
+      "Site": "Salt Lake City",
+      "Item Type": "Item",
+      "Path": "sites/GQOAnalytics333/Lists/SGS Supplier DPM Sites"
+    },
+    {
+      "Supplier DPM Sites": "Tijuana",
+      "Franchise": "Instruments",
+      "Site": "Tijuana",
+      "Item Type": "Item",
+      "Path": "sites/GQOAnalytics333/Lists/SGS Supplier DPM Sites"
+    },
+    {
+      "Supplier DPM Sites": "CM OEM KZO- Medical",
+      "Franchise": "Medical",
+      "Site": "Portage - OEM/CM",
+      "Item Type": "Item",
+      "Path": "sites/GQOAnalytics333/Lists/SGS Supplier DPM Sites"
+    },
+    {
+      "Supplier DPM Sites": "Belfast",
+      "Franchise": "Medical",
+      "Site": "Belfast",
+      "Item Type": "Item",
+      "Path": "sites/GQOAnalytics333/Lists/SGS Supplier DPM Sites"
+    },
+    {
+      "Supplier DPM Sites": "Macroom",
+      "Franchise": "GQO",
+      "Site": "Macroom",
+      "Item Type": "Item",
+      "Path": "sites/GQOAnalytics333/Lists/SGS Supplier DPM Sites"
+    },
+    {
+      "Supplier DPM Sites": "Fort Lauderdale (OrthoSensor)",
+      "Franchise": "GQO",
+      "Site": "Fort Lauderdale (OrthoSensor)",
+      "Item Type": "Item",
+      "Path": "sites/GQOAnalytics333/Lists/SGS Supplier DPM Sites"
+    },
+    {
+      "Supplier DPM Sites": "Bloomington",
+      "Franchise": "T&E",
+      "Site": "Bloomington",
+      "Item Type": "Item",
+      "Path": "sites/GQOAnalytics333/Lists/SGS Supplier DPM Sites"
+    }
+  ]
+}

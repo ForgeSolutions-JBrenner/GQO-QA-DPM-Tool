@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 import * as XLSX from "xlsx";
 import { WorkBook, Worksheet, utils, writeFile } from "xlsx";
 import DataGrid, { TextEditor } from "react-data-grid";
-import { XIcon } from "@heroicons/react/solid";
+import { XIcon, ChevronDownIcon } from "@heroicons/react/solid";
 import uploadFileToBlob, {
   isStorageConfigured,
 } from "../../utils/azure-storage-blob";
@@ -10,7 +10,9 @@ import SuccessCheck from "../Misc/SuccessCheck";
 
 //Confirm that the storage account is configured and is online
 const storageConfigured = isStorageConfigured();
-export default function Excel(props) {
+export default function Excel({ data }) {
+  //Site Data Declaration
+  const [array, setarray] = useState(data);
   //State representation for Blob Storage
   // all blobs in container
   const [blobList, setBlobList] = useState([]);
@@ -20,11 +22,17 @@ export default function Excel(props) {
   const [uploading, setUploading] = useState(false);
   const [inputKey, setInputKey] = useState(Math.random().toString(36));
   const [buttonText, setbuttonText] = useState("Upload!");
+  const date = new Date();
+  const currentYear = date.getFullYear();
+  const currentMonth = date.getMonth() + 1;
+  const [month, setMonth] = useState(currentMonth);
+  const [year, setYear] = useState(currentYear);
+  const [siteSelected, setsiteSelected] = useState(null);
 
   //Excel component state management
   const [fileName, setfileName] = useState(null);
   const [rows, setRows] = useState([]);
-  const [rowCount, setrowCount] = useState(null)
+  const [rowCount, setrowCount] = useState(null);
   const [columns, setColumns] = useState([]);
   const [workBook, setWorkBook] = useState({});
   const [sheets, setSheets] = useState([]);
@@ -42,10 +50,10 @@ export default function Excel(props) {
     //Set the workbook sheets
     const wsSheets = wb.Sheets;
     //Set the workbook names
-    const ws = wsSheets[wb.SheetNames[0]]
+    const ws = wsSheets[wb.SheetNames[0]];
     const wsName = wsSheets[wb.SheetNames[0]];
-    const wsRange = XLSX.utils.decode_range(wsSheets[wb.SheetNames[0]]['!ref'])
-    setrowCount(wsRange.e.r)
+    const wsRange = XLSX.utils.decode_range(wsSheets[wb.SheetNames[0]]["!ref"]);
+    setrowCount(wsRange.e.r);
     setSheets(wb.SheetNames);
     const temprows = utils.sheet_to_json(wsSheets[wb.SheetNames[0]], {
       header: 1,
@@ -89,12 +97,13 @@ export default function Excel(props) {
     setFileSelected(e.target.files[0]);
   };
   const onFileUpload = async () => {
+    const newFile = new File([fileSelected], siteSelected+'-'+month+'-'+year + ".xlsx");
     //Prepare UI
     setUploading(true);
     setbuttonText("Uploading File...");
     //Upload to Azure Storage
-    const blobsInContainer = await uploadFileToBlob(fileSelected);
-
+    // const blobsInContainer = await uploadFileToBlob(fileSelected);
+    const blobsInContainer = await uploadFileToBlob(newFile);
     //Prepare UI for results
     setBlobList(blobsInContainer);
 
@@ -106,6 +115,99 @@ export default function Excel(props) {
 
   return (
     <>
+      <div className="flex justify-start py-3">
+        <div className="mb-3 xl:w-auto flex mr-2">
+          <select
+            className="form-select
+                    block
+                    w-full
+                    px-3
+                    py-1.5
+                    text-base
+                    font-normal
+                    text-gray-700
+                    bg-white bg-clip-padding bg-no-repeat
+                    border border-solid border-gray-300
+                    rounded
+                    transition
+                    ease-in-out
+                    focus:text-gray-700 focus:bg-white focus:border-[#ffb500] focus:outline-none"
+            name="siteselection"
+            id=""
+            onChange={(e) => setsiteSelected(e.target.value)}
+          >
+            {array.map(function (name, idx) {
+              return (
+                <option key={idx} value={name.Site}>
+                  {name.Site}
+                </option>
+              );
+            })}
+          </select>
+        </div>
+        <div className="mb-3 xl:w-auto flex mr-2">
+          <select
+            className="form-select
+                  block
+                  w-full
+                  px-3
+                  py-1.5
+                  text-base
+                  font-normal
+                  text-gray-700
+                  bg-white bg-clip-padding bg-no-repeat
+                  border border-solid border-gray-300
+                  rounded
+                  transition
+                  ease-in-out
+                  focus:text-gray-700 focus:bg-white focus:border-[#ffb500] focus:outline-none"
+            aria-label=""
+            onChange={(e) => setMonth(e.target.value)}
+            defaultValue={month}
+          >
+            <option value="0">Select Month for Upload</option>
+            <option value="1">January</option>
+            <option value="2">February</option>
+            <option value="3">March</option>
+            <option value="4">April</option>
+            <option value="5">May</option>
+            <option value="6">June</option>
+            <option value="7">July</option>
+            <option value="8">August</option>
+            <option value="9">September</option>
+            <option value="10">October</option>
+            <option value="11">November</option>
+            <option value="12">December</option>
+          </select>
+        </div>
+        <div className="mb-3 xl:w-auto flex">
+          <select
+            className="form-select
+                    block
+                    w-full
+                    px-3
+                    py-1.5
+                    text-base
+                    font-normal
+                    text-gray-700
+                    bg-white bg-clip-padding bg-no-repeat
+                    border border-solid border-gray-300
+                    rounded
+                    transition
+                    ease-in-out
+                    focus:text-gray-700 focus:bg-white focus:border-[#ffb500] focus:outline-none"
+            aria-label=""
+            onChange={(e) => setYear(e.target.value)}
+            defaultValue={year}
+          >
+            <option value="0">Select Year for Upload</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+          </select>
+        </div>
+      </div>
+
       {sheets.length > 0 ? (
         <>
           <div className="flex justify-between p-4 ">
@@ -134,7 +236,9 @@ export default function Excel(props) {
             </div>
           </div>
           <div className="">
-            <p className="ml-2 mb-2 underline text-[#ffb500]">Previewing: {rowCount} rows</p>
+            <p className="ml-2 mb-2 underline text-[#ffb500]">
+              Previewing: {rowCount} rows
+            </p>
             <DataGrid
               defaultColumnOptions={{
                 sortable: true,
@@ -187,8 +291,8 @@ export default function Excel(props) {
                   ></path>
                 </svg>
                 <p className="mb-2 text-sm text-gray-500 dark:text-gray-400">
-                  <span className="font-semibold">Click to upload</span> or drag and
-                  drop
+                  <span className="font-semibold">Click to upload</span> or drag
+                  and drop
                 </p>
                 <p className="text-xs text-gray-500 dark:text-gray-400">
                   XLS, XLSX or XLSM (MAX. 4TB)

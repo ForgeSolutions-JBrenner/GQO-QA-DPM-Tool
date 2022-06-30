@@ -1,9 +1,12 @@
-import React from "react";
+import React, {useState} from "react";
 import MuiStepper from "../components/MUI/MuiStepper";
 import Nav from "../components/Navbar/Nav";
 import Link from 'next/link'
 import {getSession} from "next-auth/react"
+import data from '../public/dpmSites.json'
 export default function Admin(session) {
+  const dpmSiteData = data.query
+  const [array, setarray] = useState(dpmSiteData)
 
   return (
     <>
@@ -17,7 +20,7 @@ export default function Admin(session) {
       </section>
       <div className="grid place-items-center mt-10">
         <div className=" w-11/12">
-          <MuiStepper/>
+          <MuiStepper data={array}/>
         </div>
       </div>
     </>

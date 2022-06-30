@@ -11,7 +11,7 @@ import Excel from "../SheetJS/Excel";
 import Instructions from "../Misc/Instructions";
 // import Upload from "../SheetJS/Upload";
 
-export default function MuiStepper() {
+export default function MuiStepper({data}) {
   const [activeStep, setActiveStep] = useState(0);
   const [skipped, setSkipped] = useState(new Set());
   const [sheetData, setsheetData] = useState(null);
@@ -33,7 +33,7 @@ export default function MuiStepper() {
         return <Instructions />;
       case 1:
         // return <Upload />
-        return <Excel  />;
+        return <Excel data={data} />;
       // case 2:
       //   return "Complete, you can close this browser!";
       default:

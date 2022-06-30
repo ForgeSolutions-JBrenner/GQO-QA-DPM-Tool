@@ -19,7 +19,7 @@ export const isStorageConfigured = () => {
 //returns a list of blobs in container for display
 const getBlobsInContainer = async (containerClient) => {
   const returnedBlobUrls = [];
-  console.log(returnedBlobUrls);
+  // console.log(returnedBlobUrls);
   // get list of blobs in container
   // eslint-disable-next-line
   for await (const blob of containerClient.listBlobsFlat()) {
