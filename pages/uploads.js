@@ -60,28 +60,36 @@ export default function Uploads(session) {
     <>
       <section className=" bg-cover bg-center font-Barlow pb-2 bg-white">
         <Nav session={session} />
-        <div className="md:container px-24  pt-5 md:text-left text-center flex justify-between">
+        <div className="md:container px-24  pt-5 md:text-left text-center">
           <h1 className="text-2xl font-semibold  text-[#171717] mb-8">
             DPM Import Tool
           </h1>
-          <div>
-            <a
-              href="/dpm"
-              className="rounded-md bg-gray-100 dark:hover:bg-bray-800 dark:bg-gray-700 hover:bg-[#ffcf5e] font-semibold p-2"
-            >
-              Upload Data
-            </a>
-          </div>
         </div>
       </section>
+      <div className="flex justify-between">
+        <div></div>
+        <div className="mr-4">
+          <a
+            href="/dpm"
+            className="rounded-md bg-gray-100 dark:hover:bg-bray-800 dark:bg-gray-700 hover:bg-[#ffcf5e] font-semibold p-2"
+          >
+            Upload Data
+          </a>
+        </div>
+      </div>
       <div className="grid place-items-center ">
         <div className=" w-11/12">
-          <button className='bg-gray-100 dark:hover:bg-bray-800 p-2 rounded-md' onClick={getdata}>Refresh Latest Data Data</button>
+          <button
+            className="bg-gray-100 dark:hover:bg-bray-800 p-2 rounded-md font-semibold hover:scale-105"
+            onClick={getdata}
+          >
+            Refresh Latest Data
+          </button>
         </div>
         <div className="mt-4 w-11/12">
           {blobData.map((item, index) => {
             return (
-              <ol className='ml-6 list-disc' key={index}>
+              <ol className="ml-6 list-disc" key={index}>
                 <li>{item}</li>
               </ol>
             );
