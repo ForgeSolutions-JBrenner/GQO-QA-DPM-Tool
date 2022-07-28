@@ -7,7 +7,7 @@ const sasToken =
   "?sv=2020-08-04&ss=bfqt&srt=sco&sp=rwdlacupitfx&se=2023-04-01T04:26:13Z&st=2022-05-25T20:26:13Z&spr=https&sig=SWcPMaFAkaXZzXtVV83jeDswE%2BjaBeOzPs9Zz5E%2Bbzc%3D";
 const storageAccountName = "strykeranalyticsblob";
 
-export default function uploads(session) {
+export default function Uploads(session) {
   const [blobData, setblobData] = useState([]);
   const blobService = new BlobServiceClient(
     `https://${storageAccountName}.blob.core.windows.net/?${sasToken}`
