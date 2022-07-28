@@ -12,10 +12,13 @@ export default function Admin(session) {
     <>
       <section className=" bg-cover bg-center font-Barlow pb-2 bg-white">
         <Nav session={session}/>
-        <div className="md:container px-24  pt-5 md:text-left text-center">
+        <div className="md:container px-24  pt-5 md:text-left text-center flex justify-between">
           <h1 className="text-2xl font-semibold  text-[#171717] mb-8">
             DPM Import Tool
           </h1>
+          <div>
+          <a href='/uploads' className="rounded-md bg-gray-100 dark:hover:bg-bray-800 dark:bg-gray-700 hover:bg-[#ffcf5e] font-semibold   p-2">View Uploaded Files</a>
+          </div>
         </div>
       </section>
       <div className="grid place-items-center mt-10">

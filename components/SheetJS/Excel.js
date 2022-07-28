@@ -24,7 +24,7 @@ export default function Excel({ data }) {
   const [buttonText, setbuttonText] = useState("Upload!");
   const date = new Date();
   const currentYear = date.getFullYear();
-  const currentMonth = date.getMonth() + 1;
+  const currentMonth = date.getMonth();
   const [month, setMonth] = useState(currentMonth);
   const [year, setYear] = useState(currentYear);
   const [siteSelected, setsiteSelected] = useState(null);
@@ -136,10 +136,12 @@ export default function Excel({ data }) {
             id=""
             onChange={(e) => setsiteSelected(e.target.value)}
           >
-            {array.map(function (name, idx) {
+            {array
+            .sort((a,b) => a.DPMSites - b.DPMSites)
+            .map(function (name, idx) {
               return (
-                <option key={idx} value={name.Site}>
-                  {name.Site}
+                <option key={idx} value={name.DPMSites}>
+                  {name.DPMSites}
                 </option>
               );
             })}
@@ -291,11 +293,10 @@ export default function Excel({ data }) {
                   ></path>
                 </svg>
                 <p className="mb-2 text-sm text-gray-500 dark:text-gray-400">
-                  <span className="font-semibold">Click to upload</span> or drag
-                  and drop
+                  <span className="font-semibold">Click to upload</span>
                 </p>
                 <p className="text-xs text-gray-500 dark:text-gray-400">
-                  XLS, XLSX or XLSM (MAX. 4TB)
+                  XLS or XLSX (MAX. 4TB)
                 </p>
               </div>
               <input

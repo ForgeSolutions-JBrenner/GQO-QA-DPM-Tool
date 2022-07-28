@@ -17,6 +17,10 @@ export const isStorageConfigured = () => {
 
 //getBlobs in Container
 //returns a list of blobs in container for display
+const blobService = new BlobServiceClient(
+  `https://${storageAccountName}.blob.core.windows.net/?${sasToken}`
+);
+const containerClient = blobService.getContainerClient(containerName);
 const getBlobsInContainer = async (containerClient) => {
   const returnedBlobUrls = [];
   // console.log(returnedBlobUrls);
